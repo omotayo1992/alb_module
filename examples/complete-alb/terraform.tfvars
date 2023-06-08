@@ -12,7 +12,7 @@ load_balancer_name = ""
 
 enabled_target_group = true
 
-target_group_name   = ""
+target_group_name   = "test"
 
 security_group_name = ""
 

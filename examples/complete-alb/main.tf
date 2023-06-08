@@ -12,6 +12,7 @@ module "alb" {
   enabled_target_group              = var.enabled_target_group
   internal                          = var.internal
   http_enabled                      = var.http_enabled
+  target_group_name                 = var.target_group_name
   http_redirect                     = var.http_redirect
   security_group_name               = var.security_group_name
   access_logs_enabled               = var.access_logs_enabled
@@ -34,5 +35,5 @@ module "alb" {
 
   alb_access_logs_s3_bucket_force_destroy = var.alb_access_logs_s3_bucket_force_destroy
 
-  context = module.this.context
+
 }
